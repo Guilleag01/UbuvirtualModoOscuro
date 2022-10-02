@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "UbuvirtualModoOscuro",
+    "version": "1.0",
+    "description": "Modo oscuro en ubuvirtual",
+    "icons": {
+      "48": "icons/test-icon-48.png",
+      "96": "icons/test-icon-96.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://ubuvirtual.ubu.es/*"],
+        "js": ["UbuvModOsc.js"]
+      }
+    ],
+
+    "browser_specific_settings":{
+      "gecko":{
+        "id": "ubuvirtualOscuro@example.com"
+      }
+    }
+  
+}
+  
