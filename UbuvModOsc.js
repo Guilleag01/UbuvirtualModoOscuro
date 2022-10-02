@@ -134,7 +134,6 @@ for (i of document.getElementsByClassName("activity")){
 //     i.style.backgroundColor = BACKGROUND_SECONDARY;
 //     i.style.color = TEXT_PRIMARY;
 // }
-
 for (i of document.getElementsByTagName("p")){
     i.style.backgroundColor = BACKGROUND_SECONDARY;
     i.style.color = TEXT_PRIMARY;
