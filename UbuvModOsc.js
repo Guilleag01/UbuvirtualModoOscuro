@@ -17,6 +17,10 @@ document.body.style.backgroundColor = BACKGROUND_PRIMARY;
 document.body.style.color = TEXT_PRIMARY;
 document.body.style.border = BOX_BORDER;
 
+
+
+
+
 // Main body
 for (i of document.getElementsByClassName("mb-3")){
     i.style.backgroundColor = BACKGROUND_SECONDARY;
@@ -43,6 +47,11 @@ for (i of document.getElementsByClassName("list-group-item")){
     i.style.backgroundColor = NAV_ITEM;
 }
 
+for (i of document.getElementsByClassName("btn")){
+    i.style.borderColor = BOX_BORDER;
+    i.style.backgroundColor = BACKGROUND_SECONDARY
+}
+
 // Texto de los items del Nav
 for (i of document.getElementsByClassName("media")){
     i.style.color = TEXT_PRIMARY;
@@ -53,7 +62,7 @@ for (i of document.getElementsByClassName("aalink")){
     i.style.color = TEXT_SECONDARY;
 }
 
-// TExto con links en las cards
+// Texto con links en las cards
 for (i of document.getElementsByTagName("a")){
     i.style.color = TEXT_SECONDARY;
 }
@@ -118,13 +127,13 @@ for (i of document.getElementsByClassName("drawer")){
 }
 
 for (i of document.getElementsByClassName("activity")){
-    i.setAttribute('style', 'border-bottom: 1px solid ' + BOX_BORDER);
+    i.setAttribute('style', 'border-bottom: 1px solid ' + BACKGROUND_SECONDARY);
 }
 
-for (i of document.getElementsByTagName("span")){
-    i.style.backgroundColor = BACKGROUND_SECONDARY;
-    i.style.color = TEXT_PRIMARY;
-}
+// for (i of document.getElementsByTagName("span")){
+//     i.style.backgroundColor = BACKGROUND_SECONDARY;
+//     i.style.color = TEXT_PRIMARY;
+// }
 
 for (i of document.getElementsByTagName("p")){
     i.style.backgroundColor = BACKGROUND_SECONDARY;
@@ -135,3 +144,54 @@ for (i of document.getElementsByTagName("em")){
     i.style.backgroundColor = BACKGROUND_SECONDARY;
     i.style.color = TEXT_PRIMARY;
 }
+
+for (i of document.getElementsByClassName("message-app")){
+    i.style.backgroundColor = BACKGROUND_SECONDARY;
+}
+
+for (i of document.getElementsByClassName("lazy-load-list")){
+    i.style.backgroundColor = BACKGROUND_SECONDARY;
+}
+
+for (i of document.getElementsByClassName("popover-region")){
+    i.onclick = function(){
+        setTimeout(() => {
+            console.log("dñsalkjfd")
+            for (i of document.getElementsByClassName("py-0")){
+                i.style.backgroundColor = ACCENT;
+            }
+
+            for (i of document.getElementsByClassName("popover-region-container")){
+                i.style.backgroundColor = ACCENT;
+                i.style.borderColor = ACCENT;                
+            }
+
+            for (i of document.getElementsByClassName("popover-region-footer-container")){
+                i.style.backgroundColor = ACCENT;
+                i.style.borderColor = ACCENT
+            }
+            
+            for (i of document.getElementsByClassName("popover-region-header-container")){;
+                i.style.borderColor = ACCENT
+            }
+
+        }, 800);   
+    }
+}
+
+for (i of document.getElementsByClassName("form-control")){
+    i.style.backgroundColor = ACCENT;
+    i.style.borderColor = BOX_BORDER;
+}
+
+for (i of document.getElementsByClassName("border-bottom")){
+    i.setAttribute('style', 'border-bottom: 1px solid ' + BOX_BORDER + '!important');
+}
+
+
+
+for (i of document.getElementsByClassName("input-group-append")){
+    i.style.backgroundColor = BACKGROUND_SECONDARY;
+}
+
+

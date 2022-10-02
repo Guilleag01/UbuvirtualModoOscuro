@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "UbuvirtualModoOscuro",
-    "version": "1.0",
+    "version": "2.0",
     "description": "Modo oscuro en ubuvirtual",
     "icons": {
       "48": "icons/test-icon-48.png",
